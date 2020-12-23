@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: demo
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  progressDeadlineSeconds: 30
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+      - image: gcr.io/eco-volt-297312/jsapp:edf7e355f8db9a494cc37e62c407bc159ee5b411
+        name: demo
+        ports:
+        - containerPort: 8080
