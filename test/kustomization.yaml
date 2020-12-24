@@ -3,7 +3,10 @@ kind: Kustomization
 
 resources:
 - ./deployment.yaml
+- ./service.yaml
 
 images:
 - name: gcr.io/eco-volt-297312/jsapp
   newTag: 4b43505a94908537b90c047d43c7682658d6e449
+
+namePrefix: test-
