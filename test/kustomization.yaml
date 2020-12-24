@@ -6,4 +6,4 @@ resources:
 
 images:
 - name: gcr.io/eco-volt-297312/jsapp
-  newTag: 4b43505a94908537b90c047d43c7682658d6e449
+  newTag: 21f04a4172a135d910928a2b41edd4feb78e375d
